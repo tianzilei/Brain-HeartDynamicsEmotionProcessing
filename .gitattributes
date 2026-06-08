@@ -1,0 +1,23 @@
+# Auto-detect text files, normalize line endings to LF on commit
+* text=auto
+
+# Python files
+*.py text eol=lf
+
+# Markdown
+*.md text eol=lf
+
+# PsychoPy experiment files (JSON-like)
+*.psyexp text eol=lf
+
+# PowerShell scripts (Windows-native, keep CRLF)
+*.ps1 text eol=crlf
+
+# Binary files
+*.truetype binary
+*.ttf binary
+*.wav binary
+*.mp3 binary
+*.png binary
+*.jpg binary
+*.jpeg binary

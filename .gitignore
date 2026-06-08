@@ -1,0 +1,138 @@
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+*.manifest
+*.spec
+
+# ============================
+# Virtual environments
+# ============================
+venv/
+.venv/
+env/
+ENV/
+
+# ============================
+# Environment / secrets
+# ============================
+.env
+.env.local
+
+# ============================
+# IDE
+# ============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================
+# OS
+# ============================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================
+# Sisyphus (local agent state)
+# ============================
+.sisyphus/
+
+# ============================
+# PsychoPy — auto-generated build artifacts
+# ============================
+# Python scripts auto-generated from .psyexp (one-way, not editable)
+Session_*.py
+# Last-run state (generated on each "Run" from Builder)
+*_lastrun.py
+# Online export artifacts (Pavlovia / PsychoJS)
+*.js
+legacy-browsers.js
+*.html
+html/
+
+# ============================
+# PsychoPy — data output (subject data — NEVER commit)
+# ============================
+data/
+*.psydat
+*.hdf5
+
+# ============================
+# Generated audio (reproducible via generate_prompts.py)
+# ============================
+audio_prompts/
+
+# ============================
+# Stimulus images (not tracked — shared separately)
+# ============================
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+
+# ============================
+# Session_01 — reference materials
+# ============================
+# Image directories (stimuli — not tracked)
+Session_01/Emotional_faces/
+Session_01/Emotional_faces_gray/
+# Reference: track PDF/CSV/PY/JSON, ignore archives, XLS, outputs
+Session_01/中国情绪面孔/*.zip
+Session_01/中文情绪词语/*.zip
+Session_01/中文情绪词语/*.xls
+Session_01/中文情绪词语/outputs/
+Session_01/lexical_selection/outputs/
+Session_01/lexical_selection/*.md
+
+# ============================
+# Session_02 — image directories
+# ============================
+Session_02/images/
+Session_02/全图/
+
+# ============================
+# Fonts (installed separately)
+# ============================
+*.ttf
+*.otf
+*.truetype
+
+# ============================
+# Documentation (only track readme)
+# ============================
+*.md
+!readme.md
+
+# ============================
+# Logs
+# ============================
+*.log
+
+# ============================
+# Other file types (not tracked)
+# ============================
+*.xls
+*.xlsx
+*.txt
+
+# ============================
+# Jupyter
+# ============================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================
+# Misc archives
+# ============================
+*.zip
