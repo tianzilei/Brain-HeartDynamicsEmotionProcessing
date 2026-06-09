@@ -1,4 +1,4 @@
-﻿condition,participant_id,face_emotion,face_valence,word,word_valence,word_Valence_Mean,word_Arousal_Mean,word_subTF,word_Familiarity,word_NOM,jitter,iti,ansline1,ansline2,ansline3,ansline4,facepath
+﻿train_condition,train_participant_id,train_face_emotion,train_face_valence,train_word,train_word_valence,train_word_Valence_Mean,train_word_Arousal_Mean,train_word_subTF,train_word_Familiarity,train_word_NOM,train_jitter,train_iti,train_ansline1,train_ansline2,train_ansline3,train_ansline4,train_facepath
 正性一致,woman_sub17,happiness,positive,顺  利,positive,1.95,2.39,1454,6.181818182,1,0.47,0.88,当前面孔为正性，表现为高兴,判断时应忽略叠加的情绪词顺利的含义,按键F为正性面孔，按键J为负性面孔,所以本次trial应当按下F,Session_01/Emotional_faces_gray/woman_sub17/happiness.jpg
 正性一致,man_sub12,happiness,positive,伟  大,positive,2.23,2.77,1392,5.904761905,1,0.42,0.88,当前面孔为正性，表现为高兴,判断时应忽略叠加的情绪词伟大的含义,按键F为正性面孔，按键J为负性面孔,所以本次trial应当按下F,Session_01/Emotional_faces_gray/man_sub12/happiness.jpg
 正性一致,man_sub5,happiness,positive,活  泼,positive,1.96,3.0,131,5.272727273,1,0.5,0.83,当前面孔为正性，表现为高兴,判断时应忽略叠加的情绪词活泼的含义,按键F为正性面孔，按键J为负性面孔,所以本次trial应当按下F,Session_01/Emotional_faces_gray/man_sub5/happiness.jpg
@@ -15,3 +15,4 @@
 负脸正词,man_sub28,disgust,negative,表  扬,positive,2.16,3.33,114,5.954545455,1,0.39,1.05,当前面孔为负性，表现为厌恶,判断时应忽略叠加的情绪词表扬的含义,按键F为正性面孔，按键J为负性面孔,所以本次trial应当按下J,Session_01/Emotional_faces_gray/man_sub28/disgust.jpg
 负脸正词,man_sub40,sadness,negative,忠  诚,positive,2.23,2.31,527,6.318181818,1,0.4,1.0,当前面孔为负性，表现为悲伤,判断时应忽略叠加的情绪词忠诚的含义,按键F为正性面孔，按键J为负性面孔,所以本次trial应当按下J,Session_01/Emotional_faces_gray/man_sub40/sadness.jpg
 负脸正词,man_sub50,sadness,negative,伟  大,positive,2.23,2.77,1392,5.904761905,1,0.38,1.01,当前面孔为负性，表现为悲伤,判断时应忽略叠加的情绪词伟大的含义,按键F为正性面孔，按键J为负性面孔,所以本次trial应当按下J,Session_01/Emotional_faces_gray/man_sub50/sadness.jpg
+

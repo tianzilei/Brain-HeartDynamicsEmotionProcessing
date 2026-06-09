@@ -1,4 +1,4 @@
-﻿condition,participant_id,face_emotion,face_valence,word,word_valence,word_Valence_Mean,word_Arousal_Mean,word_subTF,word_Familiarity,word_NOM,jitter,iti,facepath
+﻿partB_condition,partB_participant_id,partB_face_emotion,partB_face_valence,partB_word,partB_word_valence,partB_word_Valence_Mean,partB_word_Arousal_Mean,partB_word_subTF,partB_word_Familiarity,partB_word_NOM,partB_jitter,partB_iti,partB_facepath
 负脸正词,woman_sub46,fear,negative,亲  切,positive,1.8,2.38,148,6.0,2,0.32,0.92,Session_01/Emotional_faces_gray/woman_sub46/fear.jpg
 正性一致,man_sub54,happiness,positive,礼  貌,positive,2.0,2.38,723,6.090909091,1,0.44,0.86,Session_01/Emotional_faces_gray/man_sub54/happiness.jpg
 正性一致,woman_sub19,happiness,positive,刻  苦,positive,1.92,2.5,60,6.136363636,2,0.49,1.09,Session_01/Emotional_faces_gray/woman_sub19/happiness.jpg
@@ -119,3 +119,4 @@
 正性一致,woman_sub51,happiness,positive,诚  实,positive,2.31,2.35,724,5.904761905,1,0.32,0.87,Session_01/Emotional_faces_gray/woman_sub51/happiness.jpg
 负性一致,woman_sub26,fear,negative,嘲  笑,negative,-1.73,2.67,675,4.947368421,1,0.36,1.11,Session_01/Emotional_faces_gray/woman_sub26/fear.jpg
 正脸负词,woman_sub10,happiness,positive,恐  惧,negative,-1.92,2.93,990,6.227272727,1,0.47,0.87,Session_01/Emotional_faces_gray/woman_sub10/happiness.jpg
+
