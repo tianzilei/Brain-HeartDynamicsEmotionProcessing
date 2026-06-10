@@ -53,9 +53,13 @@ if (Test-Path $filePath) {
     # Step 2: Fix sendMessage(N) runtime errors -> sendMessage(bytes(chr(N), 'utf-8'))
     $fixed = $fixed -replace '\.sendMessage\((\d+)\)', '.sendMessage(bytes(chr($1), ''utf-8''))'
     
+    # Step 3: Fix sendMessage(bytes(...)) -> com.write(...) (PsychoPy sendMessage broken)
+    $fixed = $fixed -replace '\.sendMessage\(bytes\(chr\((\d+)\),\s*''utf-8''\)\)', '.com.write(bytes([$1]))'
+    $fixed = $fixed -replace '\.sendMessage\(bytes\(bytearray\(\[(\d+)\]\)\)\)', '.com.write(bytes([$1]))'
+    
     if ($fixed -ne $content) {
         [System.IO.File]::WriteAllText($filePath, $fixed, $utf8NoBom)
-        Write-Host "[OK] Fixed common bugs in $targetFile"
+        Write-Host "[OK] Fixed bugs in $targetFile (0bN + sendMessage + com.write)"
     } else {
         Write-Host "[OK] No bugs found in $targetFile"
     }

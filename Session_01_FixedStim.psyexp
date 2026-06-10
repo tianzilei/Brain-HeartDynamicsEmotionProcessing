@@ -223,14 +223,14 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 0.3&amp;#10;for b in seq:&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(0.003)&amp;#10;    serialPort.sendMessage(chr(b))&amp;#10;    clock.time.sleep(0.005)&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 1.0&amp;#10;for b in seq:&amp;#10;    serialPort.com.write(bytes([b]))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x04, 0x02, 0x01, 0x02, 0x04]&amp;#10;gap = 0.3&amp;#10;for b in seq:&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(0.003)&amp;#10;    serialPort.sendMessage(chr(b))&amp;#10;    clock.time.sleep(0.005)&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x04, 0x02, 0x01, 0x02, 0x04]&amp;#10;gap = 1.0&amp;#10;for b in seq:&amp;#10;    serialPort.com.write(bytes([b]))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -323,14 +323,14 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="# ── Alignment START Marker ──&amp;#10;# Paste into Code Component &gt; Begin Routine (at start of recording block)&amp;#10;# 5-byte coded sequence: 0x01→0x02→0x04→0x02→0x01&amp;#10;# fNIRS: CH0→CH1→CH2→CH1→CH0 | Synamp: 160→224→208→224→160&amp;#10;serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 0.3&amp;#10;for b in seq:&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(0.003)&amp;#10;    serialPort.sendMessage(chr(b))&amp;#10;    clock.time.sleep(0.005)&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# ── Alignment START Marker ──&amp;#10;# Paste into Code Component &gt; Begin Routine (at start of recording block)&amp;#10;# 5-byte coded sequence: 0x01→0x02→0x04→0x02→0x01&amp;#10;# fNIRS: CH0→CH1→CH2→CH1→CH0 | Synamp: 160→224→208→224→160&amp;#10;serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 1.0&amp;#10;for b in seq:&amp;#10;    serialPort.com.write(bytes([b]))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="# ── Alignment END Marker ──&amp;#10;# Paste into Code Component &gt; End Routine (at end of recording block)&amp;#10;# 5-byte coded sequence: 0x04→0x02→0x01→0x02→0x04&amp;#10;# fNIRS: CH2→CH1→CH0→CH1→CH2 | Synamp: 208→224→160→224→208&amp;#10;serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x04, 0x02, 0x01, 0x02, 0x04]&amp;#10;gap = 0.3&amp;#10;for b in seq:&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(0.003)&amp;#10;    serialPort.sendMessage(chr(b))&amp;#10;    clock.time.sleep(0.005)&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="# ── Alignment END Marker ──&amp;#10;# Paste into Code Component &gt; End Routine (at end of recording block)&amp;#10;# 5-byte coded sequence: 0x04→0x02→0x01→0x02→0x04&amp;#10;# fNIRS: CH2→CH1→CH0→CH1→CH2 | Synamp: 208→224→160→224→208&amp;#10;serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x04, 0x02, 0x01, 0x02, 0x04]&amp;#10;gap = 1.0&amp;#10;for b in seq:&amp;#10;    serialPort.com.write(bytes([b]))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_4" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -660,7 +660,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="serialPort = deviceManager.getDevice(&quot;COM&quot;);&amp;#10;seq = [1, 2, 4, 2, 1];&amp;#10;gap = 0.3;&amp;#10;for (var b, _pj_c = 0, _pj_a = seq, _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    b = _pj_a[_pj_c];&amp;#10;    serialPort.sendMessage(String.fromCharCode(0));&amp;#10;    clock.time.sleep(0.003);&amp;#10;    serialPort.sendMessage(String.fromCharCode(b));&amp;#10;    clock.time.sleep(0.005);&amp;#10;    serialPort.sendMessage(String.fromCharCode(0));&amp;#10;    clock.time.sleep(gap);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 0.3&amp;#10;for b in seq:&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(0.003)&amp;#10;    serialPort.sendMessage(chr(b))&amp;#10;    clock.time.sleep(0.005)&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 1.0&amp;#10;for b in seq:&amp;#10;    serialPort.com.write(bytes([b]))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_2" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -1515,7 +1515,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="serialPort = deviceManager.getDevice(&quot;COM&quot;);&amp;#10;seq = [4, 2, 1, 2, 4];&amp;#10;gap = 0.3;&amp;#10;for (var b, _pj_c = 0, _pj_a = seq, _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    b = _pj_a[_pj_c];&amp;#10;    serialPort.sendMessage(String.fromCharCode(0));&amp;#10;    clock.time.sleep(0.003);&amp;#10;    serialPort.sendMessage(String.fromCharCode(b));&amp;#10;    clock.time.sleep(0.005);&amp;#10;    serialPort.sendMessage(String.fromCharCode(0));&amp;#10;    clock.time.sleep(gap);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x04, 0x02, 0x01, 0x02, 0x04]&amp;#10;gap = 0.3&amp;#10;for b in seq:&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(0.003)&amp;#10;    serialPort.sendMessage(chr(b))&amp;#10;    clock.time.sleep(0.005)&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x04, 0x02, 0x01, 0x02, 0x04]&amp;#10;gap = 1.0&amp;#10;for b in seq:&amp;#10;    serialPort.com.write(bytes([b]))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1584,7 +1584,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="serialPort = deviceManager.getDevice(&quot;COM&quot;);&amp;#10;seq = [1, 2, 4, 2, 1];&amp;#10;gap = 0.3;&amp;#10;for (var b, _pj_c = 0, _pj_a = seq, _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    b = _pj_a[_pj_c];&amp;#10;    serialPort.sendMessage(String.fromCharCode(0));&amp;#10;    clock.time.sleep(0.003);&amp;#10;    serialPort.sendMessage(String.fromCharCode(b));&amp;#10;    clock.time.sleep(0.005);&amp;#10;    serialPort.sendMessage(String.fromCharCode(0));&amp;#10;    clock.time.sleep(gap);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 0.3&amp;#10;for b in seq:&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(0.003)&amp;#10;    serialPort.sendMessage(chr(b))&amp;#10;    clock.time.sleep(0.005)&amp;#10;    serialPort.sendMessage(chr(0))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="serialPort = deviceManager.getDevice('COM')&amp;#10;seq = [0x01, 0x02, 0x04, 0x02, 0x01]&amp;#10;gap = 1.0&amp;#10;for b in seq:&amp;#10;    serialPort.com.write(bytes([b]))&amp;#10;    clock.time.sleep(gap)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_5" valType="code" updates="None" name="name"/>
       </CodeComponent>
